@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "bookkeeping-app",
-    "slug": "bookkeeping-app",
+    "name": "轻记账",
+    "slug": "bookkeeping",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
@@ -16,10 +16,27 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.personal.bookkeeping"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-sharing",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#4A90E2"
+        }
+      ]
+    ],
+    "scheme": "bookkeeping",
+    "backgroundColor": "#F2F6FB"
   }
 }
