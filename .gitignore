@@ -45,3 +45,6 @@ dist/
 
 # IDE
 .idea/
+
+# 工具本地配置
+.claude/
